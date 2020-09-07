@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elinguage</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/fullpage.css">
+	<meta name="viewport" content="width=device-width">
+	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="scripts/fullpage.js"></script>
+	<script type="text/javascript" src="scripts/scrolloverflow.min.js"></script>
+</head>
+
+<script type="text/javascript">
+	var doFullpage = document.documentElement.clientWidth;
+	jQuery(document).ready(function($){
+		if (doFullpage > 768) {
+               $('#fullpage').fullpage({
+               	navigation: true,
+				navigationPosition: 'right'
+               });
+            }
+	})
+</script>
+
+<body>
+	<div class="wrap">
+		<div id="fullpage">
+			<header>
+				
+			</header>
+			<main>
+				<div class="section" id="section0">
+					<div class="container">
+						<div class="container__wrapper">
+							<div class="container__logo"></div>
+							<p>Talk to people artificial language</p>
+						</div>
+						<div class="container__registration">
+							<div class="hello">
+								<label class="tab active">Join us</label>
+								<label class="tab">Sign in</label>
+							</div>
+							<form class="tab-form">
+								<input type="name" placeholder="Name">
+								<input type="email" placeholder="E-mail">
+								<input type="password" placeholder="Password">
+								<p>If you’re the celebrity, enter the code to create a language</p>
+								<input type="code" placeholder="Code">
+								<a href="#" class="button">Register now</a>
+							</form>
+
+							<form class="tab-form del">
+								<input type="email" placeholder="E-mail">
+								<input type="password" placeholder="Password">
+								<a href="#" class="button">Sign in</a>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="section1">
+					<div class="information">
+						<h1 class="information__title-one">What is Elinguage?</h1>
+						<p>Web platform for communication using different artificial languages. New idea for your and your friends fun. Enjoy yor conversation!</p>
+						<h1 class="information__title-two">How it works?</h1>
+						<div class="information__container">
+							<div class="information__item">
+								<img src="img/plus.png">
+								<div class="text__wrapper one">
+									<h3>Start</h3>
+									Register or sign in
+								</div>
+							</div>
+							<div class="information__item">
+								<img src="img/translation.png">
+								<div class="text__wrapper two">
+									<h3>Translate</h3>	
+									Write word or expression, choose the language and translate
+								</div>
+							</div>
+							<div class="information__item">
+								<img src="img/group2.png">
+								<div class="text__wrapper three">
+									<h3>Share</h3>
+									Share the five-letter conversation code with other members, who can use it to join your group.
+								</div>
+							</div>
+							<div class="information__item">
+								<img src="img/idea.png">
+								<div class="text__wrapper four">
+									<h3>Create</h3>
+									Create your own language!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="section2">
+					<div class="footer__information">
+						<div class="footer__logo"></div>
+						<div class="contact__wrapper">
+							<div class="line__wrapper">
+								<div class="line"></div>
+								<div>Connect with us</div>
+								<div class="line"></div>
+							</div>
+							<a href="#">support@elinguage.com</a>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+</body>
+</html>
